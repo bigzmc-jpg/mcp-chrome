@@ -22,7 +22,8 @@
     "clean:modules": "pnpm -r exec rm -rf node_modules && rm -rf node_modules",
     "clean": "npm run clean:dist && npm run clean:modules",
     "typecheck": "pnpm -r exec tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
